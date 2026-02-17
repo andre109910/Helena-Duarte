@@ -737,14 +737,17 @@
   </style>
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '3051382638383487');
     fbq('track', 'PageView');
   </script>
@@ -1020,21 +1023,21 @@
       </div>
     </div>
 
-          <section class="gallery" style="
+    <section class="gallery" style="
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 max-width: 600px;
                 margin: 0 auto;
               ">
-            <div style="
+      <div style="
                   position: relative;
                   width: 100%;
                   border-radius: 10px;
                   overflow: hidden;
                 ">
-              <img src="images/galeria1.png" alt="Post" style="width: 100%; height: auto; display: block" />
-              <img src="images/privacy_logo_white.svg" alt="Logo" style="
+        <img src="images/galeria1.png" alt="Post" style="width: 100%; height: auto; display: block" />
+        <img src="images/privacy_logo_white.svg" alt="Logo" style="
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -1042,16 +1045,16 @@
                     max-width: 300px;
                     z-index: 1;
                   " />
-            </div>
+      </div>
 
-            <div style="
+      <div style="
                   position: relative;
                   width: 100%;
                   border-radius: 10px;
                   overflow: hidden;
                 ">
-              <img src="images/galeria2.png" alt="Post" style="width: 100%; height: auto; display: block" />
-              <img src="images/privacy_logo_white.svg" alt="Logo" style="
+        <img src="images/galeria2.png" alt="Post" style="width: 100%; height: auto; display: block" />
+        <img src="images/privacy_logo_white.svg" alt="Logo" style="
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -1059,449 +1062,443 @@
                     max-width: 300px;
                     z-index: 1;
                   " />
-            </div>
-          </section>
+      </div>
+    </section>
 
-          <!-- Abas de Conteúdo -->
-          <div class="content-tabs">
-            <div class="tabs">
-              <button class="tab active" data-tab="posts">
-                93 postagens
-              </button>
-              <button class="tab" data-tab="media">166 mídias</button>
-            </div>
+    <!-- Abas de Conteúdo -->
+    <div class="content-tabs">
+      <div class="tabs">
+        <button class="tab active" data-tab="posts">
+          93 postagens
+        </button>
+        <button class="tab" data-tab="media">166 mídias</button>
+      </div>
 
-            <!-- Conteúdo da Aba de Postagens -->
-            <div class="tab-content active" id="posts-content">
-              <div style="
+      <!-- Conteúdo da Aba de Postagens -->
+      <div class="tab-content active" id="posts-content">
+        <div style="
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 4px;
                   ">
-                <div class="post-card" style="margin-bottom: 20px">
-                  <div class="post-header">
-                    <div class="post-user">
-                      <img src="images/perfil.png" alt="Foto de Perfil" class="post-avatar" />
-                      <div>
-                        <h4>Helena Duarte</h4>
-                        <p class="post-username">@dra.helenaduarte_</p>
-                      </div>
-                    </div>
-                    <button class="post-menu">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="1"></circle>
-                        <circle cx="12" cy="5" r="1"></circle>
-                        <circle cx="12" cy="19" r="1"></circle>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <!-- Substituído a imagem pelo vídeo com ícone de cadeado -->
-                  <div class="post-content">
-                    <div class="post-video-container" style="height: 100%">
-                      <video src="media/Vídeo 2.mp4" class="post-video" autoplay="" loop="" muted="" playsinline=""
-                        webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" style="height: 100%"></video>
-                      <div class="video-overlay">
-                        <div class="lock-icon">
-                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                          </svg>
-                        </div>
-                        <div class="post-stats">
-                          <div class="post-stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                              </path>
-                            </svg>
-                            <span>248</span>
-                          </div>
-
-                          <div class="post-stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                            <span>126</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="post-actions">
-                    <button class="action-button">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                        </path>
-                      </svg>
-                    </button>
-                    <button class="action-button">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                      </svg>
-                    </button>
-
-                    <button class="action-button bookmark">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="post-card" style="margin-bottom: 20px">
-                  <div class="post-header">
-                    <div class="post-user">
-                      <img src="images/perfil.png" alt="Foto de Perfil" class="post-avatar" />
-                      <div>
-                        <h4>Helena Duarte</h4>
-                        <p class="post-username">@dra.helenaduarte_</p>
-                      </div>
-                    </div>
-                    <button class="post-menu">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="1"></circle>
-                        <circle cx="12" cy="5" r="1"></circle>
-                        <circle cx="12" cy="19" r="1"></circle>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <!-- Substituído a imagem pelo vídeo com ícone de cadeado -->
-                  <div class="post-content">
-                    <div class="post-video-container" style="height: 100%">
-                      <video src="media/Vídeo 1 (1).mp4" class="post-video" autoplay="" loop="" muted="" playsinline=""
-                        webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" style="height: 100%"></video>
-                      <div class="video-overlay">
-                        <div class="lock-icon">
-                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                          </svg>
-                        </div>
-                        <div class="post-stats">
-                          <div class="post-stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                              </path>
-                            </svg>
-                            <span>549</span>
-                          </div>
-
-                          <div class="post-stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                            <span>362</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="post-actions">
-                    <button class="action-button">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                        </path>
-                      </svg>
-                    </button>
-                    <button class="action-button">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                      </svg>
-                    </button>
-
-                    <button class="action-button bookmark">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                      </svg>
-                    </button>
-                  </div>
+          <div class="post-card" style="margin-bottom: 20px">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="images/perfil.png" alt="Foto de Perfil" class="post-avatar" />
+                <div>
+                  <h4>Helena Duarte</h4>
+                  <p class="post-username">@dra.helenaduarte_</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- Conteúdo da Aba de Mídias -->
-          <div class="tab-content" id="media-content">
-            <div class="media-subtabs">
-              <button class="subtab active" data-subtab="all">
-                166 todos
+              <button class="post-menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="1"></circle>
+                  <circle cx="12" cy="5" r="1"></circle>
+                  <circle cx="12" cy="19" r="1"></circle>
+                </svg>
               </button>
-              <button class="subtab" data-subtab="photos">102 fotos</button>
-              <button class="subtab" data-subtab="videos">64 vídeos</button>
             </div>
 
-            <div class="media-grid">
-              <div class="media-item">
-                <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+            <!-- Imagem com efeito de blur e cadeado -->
+            <div class="post-content" style="position: relative; overflow: hidden;">
+              <img src="images/post1.png" alt="Conteúdo bloqueado"
+                style="width: 100%; height: 100%; object-fit: cover; filter: blur(8px); transform: scale(1.1);" />
+              <div class="video-overlay">
                 <div class="lock-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg>
                 </div>
-              </div>
-              <div class="media-item">
-                <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
-                <div class="lock-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
+                <div class="post-stats">
+                  <div class="post-stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    <span>248</span>
+                  </div>
+                  <div class="post-stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>126</span>
+                  </div>
                 </div>
               </div>
-              <div class="media-item">
-                <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
-                <div class="lock-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="media-item">
-                <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
-                <div class="lock-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="media-item">
-                <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
-                <div class="lock-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="media-item">
-                <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
-                <div class="lock-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
-                </div>
-              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
+                </svg>
+              </button>
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+
+              <button class="action-button bookmark">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
-          <a href="https://zuckpay.com.br/checkout/privacy-helena-duarte-mensal" class="subscription-link">
-            <button class="subscription-button primary-button">
-              <b>QUERO O PLANO MENSAL</b>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
-                <path d="M8 5L15.57 11.6237C15.7976 11.8229 15.7976 12.1771 15.57 12.3763L8 19" stroke="#fff"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </a>
+          <div class="post-card" style="margin-bottom: 20px">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="images/perfil.png" alt="Foto de Perfil" class="post-avatar" />
+                <div>
+                  <h4>Helena Duarte</h4>
+                  <p class="post-username">@dra.helenaduarte_</p>
+                </div>
+              </div>
+              <button class="post-menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="1"></circle>
+                  <circle cx="12" cy="5" r="1"></circle>
+                  <circle cx="12" cy="19" r="1"></circle>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Imagem com efeito de blur e cadeado -->
+            <div class="post-content" style="position: relative; overflow: hidden;">
+              <img src="images/post2.png" alt="Conteúdo bloqueado"
+                style="width: 100%; height: 100%; object-fit: cover; filter: blur(8px); transform: scale(1.1);" />
+              <div class="video-overlay">
+                <div class="lock-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <div class="post-stats">
+                  <div class="post-stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    <span>549</span>
+                  </div>
+                  <div class="post-stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>362</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
+                </svg>
+              </button>
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+
+              <button class="action-button bookmark">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Conteúdo da Aba de Mídias -->
+    <div class="tab-content" id="media-content">
+      <div class="media-subtabs">
+        <button class="subtab active" data-subtab="all">
+          166 todos
+        </button>
+        <button class="subtab" data-subtab="photos">102 fotos</button>
+        <button class="subtab" data-subtab="videos">64 vídeos</button>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-item">
+          <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+          <div class="lock-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="media-item">
+          <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+          <div class="lock-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="media-item">
+          <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+          <div class="lock-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="media-item">
+          <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+          <div class="lock-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="media-item">
+          <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+          <div class="lock-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="media-item">
+          <img src="images/logo.webp" alt="Logo Privacy" class="logo-background" />
+          <div class="lock-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://zuckpay.com.br/checkout/privacy-helena-duarte-mensal" class="subscription-link">
+      <button class="subscription-button primary-button">
+        <b>QUERO O PLANO MENSAL</b>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+          <path d="M8 5L15.57 11.6237C15.7976 11.8229 15.7976 12.1771 15.57 12.3763L8 19" stroke="#fff" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </a>
 
   </main>
 
-      <!-- Consentimento de Cookies -->
-      <div class="cookie-consent">
-        <div class="container cookie-container">
-          <p>
-            O Privacy usa cookies e tecnologias semelhantes para fornecer,
-            manter e melhorar nossos serviços. Se você aceitar, usaremos esses
-            dados para personalização e análises associadas.
-          </p>
-          <button class="primary-button">Aceitar</button>
-        </div>
-      </div>
+  <!-- Consentimento de Cookies -->
+  <div class="cookie-consent">
+    <div class="container cookie-container">
+      <p>
+        O Privacy usa cookies e tecnologias semelhantes para fornecer,
+        manter e melhorar nossos serviços. Se você aceitar, usaremos esses
+        dados para personalização e análises associadas.
+      </p>
+      <button class="primary-button">Aceitar</button>
+    </div>
+  </div>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          // Melhorias para reprodução de vídeo no iOS
-          const video = document.querySelector(".post-video");
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Melhorias para reprodução de vídeo no iOS
+      const video = document.querySelector(".post-video");
 
-          if (video) {
-            // Função para tentar iniciar o vídeo de várias maneiras
-            const tryPlayVideo = () => {
-              // Tenta reproduzir o vídeo
-              const playPromise = video.play();
+      if (video) {
+        // Função para tentar iniciar o vídeo de várias maneiras
+        const tryPlayVideo = () => {
+          // Tenta reproduzir o vídeo
+          const playPromise = video.play();
 
-              if (playPromise !== undefined) {
-                playPromise
-                  .then(() => {
-                    console.log("Vídeo iniciado com sucesso");
-                  })
-                  .catch((error) => {
-                    console.log("Erro ao iniciar vídeo:", error);
+          if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                console.log("Vídeo iniciado com sucesso");
+              })
+              .catch((error) => {
+                console.log("Erro ao iniciar vídeo:", error);
 
-                    // Se falhar, tenta novamente após um pequeno atraso
-                    setTimeout(() => {
-                      video
-                        .play()
-                        .catch((e) =>
-                          console.log("Tentativa adicional falhou:", e)
-                        );
-                    }, 300);
-                  });
-              }
-            };
-
-            // Tenta iniciar o vídeo imediatamente
-            tryPlayVideo();
-
-            // Tenta novamente quando a página estiver totalmente carregada
-            window.addEventListener("load", tryPlayVideo);
-
-            // Tenta novamente com interação do usuário
-            document.body.addEventListener(
-              "touchstart",
-              () => {
-                video
-                  .play()
-                  .catch((e) =>
-                    console.log("Falha ao iniciar com toque:", e)
-                  );
-              },
-              { once: true }
-            );
-
-            // Verifica se o vídeo está pausado e tenta reproduzir novamente
-            setInterval(() => {
-              if (video.paused) {
-                video
-                  .play()
-                  .catch((e) =>
-                    console.log("Falha ao reiniciar vídeo pausado:", e)
-                  );
-              }
-            }, 1000);
+                // Se falhar, tenta novamente após um pequeno atraso
+                setTimeout(() => {
+                  video
+                    .play()
+                    .catch((e) =>
+                      console.log("Tentativa adicional falhou:", e)
+                    );
+                }, 300);
+              });
           }
+        };
 
-          // Promotions dropdown toggle
-          const promotionsHeader =
-            document.querySelector(".promotions-header");
-          const promotionsButtons = document.querySelectorAll(
-            ".promotions .subscription-link"
-          );
-          const chevron = document.querySelector(".chevron");
-          let promotionsOpen = true;
+        // Tenta iniciar o vídeo imediatamente
+        tryPlayVideo();
 
-          promotionsHeader.addEventListener("click", () => {
-            promotionsOpen = !promotionsOpen;
+        // Tenta novamente quando a página estiver totalmente carregada
+        window.addEventListener("load", tryPlayVideo);
 
-            if (promotionsOpen) {
-              promotionsButtons.forEach((button) => {
-                button.style.display = "block";
-              });
-              chevron.style.transform = "rotate(0deg)";
-            } else {
-              promotionsButtons.forEach((button) => {
-                button.style.display = "none";
-              });
-              chevron.style.transform = "rotate(-90deg)";
-            }
-          });
-
-          // Content tabs
-          const tabs = document.querySelectorAll(".tab");
-          const tabContents = document.querySelectorAll(".tab-content");
-
-          tabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-              // Remove active class from all tabs and contents
-              tabs.forEach((t) => t.classList.remove("active"));
-              tabContents.forEach((content) =>
-                content.classList.remove("active")
+        // Tenta novamente com interação do usuário
+        document.body.addEventListener(
+          "touchstart",
+          () => {
+            video
+              .play()
+              .catch((e) =>
+                console.log("Falha ao iniciar com toque:", e)
               );
+          },
+          { once: true }
+        );
 
-              // Add active class to clicked tab
-              tab.classList.add("active");
-
-              // Show corresponding content
-              const tabId = tab.getAttribute("data-tab");
-              document
-                .getElementById(`${tabId}-content`)
-                .classList.add("active");
-            });
-          });
-
-          // Media subtabs
-          const subtabs = document.querySelectorAll(".subtab");
-
-          subtabs.forEach((subtab) => {
-            subtab.addEventListener("click", () => {
-              // Remove active class from all subtabs
-              subtabs.forEach((s) => s.classList.remove("active"));
-
-              // Add active class to clicked subtab
-              subtab.classList.add("active");
-            });
-          });
-
-          // Cookie consent
-          const cookieConsent = document.querySelector(".cookie-consent");
-          const acceptButton = cookieConsent.querySelector("button");
-
-          // Check if user has already accepted cookies
-          if (localStorage.getItem("cookiesAccepted")) {
-            cookieConsent.style.display = "none";
+        // Verifica se o vídeo está pausado e tenta reproduzir novamente
+        setInterval(() => {
+          if (video.paused) {
+            video
+              .play()
+              .catch((e) =>
+                console.log("Falha ao reiniciar vídeo pausado:", e)
+              );
           }
+        }, 1000);
+      }
 
-          acceptButton.addEventListener("click", () => {
-            localStorage.setItem("cookiesAccepted", "true");
-            cookieConsent.style.display = "none";
+      // Promotions dropdown toggle
+      const promotionsHeader =
+        document.querySelector(".promotions-header");
+      const promotionsButtons = document.querySelectorAll(
+        ".promotions .subscription-link"
+      );
+      const chevron = document.querySelector(".chevron");
+      let promotionsOpen = true;
+
+      promotionsHeader.addEventListener("click", () => {
+        promotionsOpen = !promotionsOpen;
+
+        if (promotionsOpen) {
+          promotionsButtons.forEach((button) => {
+            button.style.display = "block";
           });
-
-          // Adicionar efeito de pulsar aos botões quando passar o mouse
-          const outlineButtons = document.querySelectorAll(".outline-button");
-
-          outlineButtons.forEach((button) => {
-            button.addEventListener("mouseenter", () => {
-              button.classList.add("pulse");
-            });
-
-            button.addEventListener("mouseleave", () => {
-              button.classList.remove("pulse");
-            });
+          chevron.style.transform = "rotate(0deg)";
+        } else {
+          promotionsButtons.forEach((button) => {
+            button.style.display = "none";
           });
+          chevron.style.transform = "rotate(-90deg)";
+        }
+      });
+
+      // Content tabs
+      const tabs = document.querySelectorAll(".tab");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs and contents
+          tabs.forEach((t) => t.classList.remove("active"));
+          tabContents.forEach((content) =>
+            content.classList.remove("active")
+          );
+
+          // Add active class to clicked tab
+          tab.classList.add("active");
+
+          // Show corresponding content
+          const tabId = tab.getAttribute("data-tab");
+          document
+            .getElementById(`${tabId}-content`)
+            .classList.add("active");
         });
-      </script>
+      });
 
-      <title>Depoimentos com Fotos</title>
+      // Media subtabs
+      const subtabs = document.querySelectorAll(".subtab");
 
-      <h3 style="
+      subtabs.forEach((subtab) => {
+        subtab.addEventListener("click", () => {
+          // Remove active class from all subtabs
+          subtabs.forEach((s) => s.classList.remove("active"));
+
+          // Add active class to clicked subtab
+          subtab.classList.add("active");
+        });
+      });
+
+      // Cookie consent
+      const cookieConsent = document.querySelector(".cookie-consent");
+      const acceptButton = cookieConsent.querySelector("button");
+
+      // Check if user has already accepted cookies
+      if (localStorage.getItem("cookiesAccepted")) {
+        cookieConsent.style.display = "none";
+      }
+
+      acceptButton.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieConsent.style.display = "none";
+      });
+
+      // Adicionar efeito de pulsar aos botões quando passar o mouse
+      const outlineButtons = document.querySelectorAll(".outline-button");
+
+      outlineButtons.forEach((button) => {
+        button.addEventListener("mouseenter", () => {
+          button.classList.add("pulse");
+        });
+
+        button.addEventListener("mouseleave", () => {
+          button.classList.remove("pulse");
+        });
+      });
+    });
+  </script>
+
+  <title>Depoimentos com Fotos</title>
+
+  <h3 style="
             text-align: center;
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 15px;
           ">
-        📢 O que estão dizendo...
-      </h3>
-      <div style="display: flex; overflow-x: auto; gap: 15px; padding: 10px 0">
-        <div style="
+    📢 O que estão dizendo...
+  </h3>
+  <div style="display: flex; overflow-x: auto; gap: 15px; padding: 10px 0">
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1511,21 +1508,21 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/676283.jpg" style="
+      <img src="images/676283.jpg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>João Henrique, 32 anos</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Não acreditava que seria tão bom por esse preço, achei q era
-            golpe essa prr mas o acesso foi instantâneo e o conteúdo é
-            incrível. Recomendo!”
-          </p>
-        </div>
-        <div style="
+      <strong>João Henrique, 32 anos</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Não acreditava que seria tão bom por esse preço, achei q era
+        golpe essa prr mas o acesso foi instantâneo e o conteúdo é
+        incrível. Recomendo!”
+      </p>
+    </div>
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1535,20 +1532,20 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/WhatsApp-Image-2020-12-17-at-16.35.45.jpeg" style="
+      <img src="images/WhatsApp-Image-2020-12-17-at-16.35.45.jpeg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Carlos Silva, 45 anos</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Conteúdo, sem censura, bem melhor que esses sites por aí. E ainda
-            recebo no zap? Tô dentro
-          </p>
-        </div>
-        <div style="
+      <strong>Carlos Silva, 45 anos</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Conteúdo, sem censura, bem melhor que esses sites por aí. E ainda
+        recebo no zap? Tô dentro
+      </p>
+    </div>
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1558,20 +1555,20 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/acidente1.jpg" style="
+      <img src="images/acidente1.jpg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Reginaldo, 48 anos</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Achei discreto demais! Impossivel desconfiar, ninguém desconfia
-            de nada 👌”
-          </p>
-        </div>
-        <div style="
+      <strong>Reginaldo, 48 anos</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Achei discreto demais! Impossivel desconfiar, ninguém desconfia
+        de nada 👌”
+      </p>
+    </div>
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1581,20 +1578,20 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/WhatsApp-Image-2020-12-17-at-16.35.45.jpeg" style="
+      <img src="images/WhatsApp-Image-2020-12-17-at-16.35.45.jpeg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Marcelo Tavares, 31 anos</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Tô no grupo VIP, recebo vídeo todo dia de manhã... é tipo meu bom
-            dia personalizado”
-          </p>
-        </div>
-        <div style="
+      <strong>Marcelo Tavares, 31 anos</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Tô no grupo VIP, recebo vídeo todo dia de manhã... é tipo meu bom
+        dia personalizado”
+      </p>
+    </div>
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1604,20 +1601,20 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/1jv8bzkl82h61.jpg" style="
+      <img src="images/1jv8bzkl82h61.jpg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Fábio C, 42 anos</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Com 22 reais eu não compro nem um lanche... preferi meter na
-            assinatura e não me arrependi,muito delicia p>
-          </p>
-        </div>
-        <div style="
+      <strong>Fábio C, 42 anos</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Com 22 reais eu não compro nem um lanche... preferi meter na
+        assinatura e não me arrependi,muito delicia p>
+      </p>
+    </div>
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1627,21 +1624,21 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/jeverson-pereira.jpg" style="
+      <img src="images/jeverson-pereira.jpg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Anônimo</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Confesso que achei que ia ser só nude... mas veio vídeo metendo
-            mesmo, tesão demais
-          </p>
-        </div>
+      <strong>Anônimo</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Confesso que achei que ia ser só nude... mas veio vídeo metendo
+        mesmo, tesão demais
+      </p>
+    </div>
 
-        <div style="
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1651,20 +1648,20 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/reginaldo-tinha-45-anos-e-ja-havia-apresentado-crise-nervosa-durante-o.jpg" style="
+      <img src="images/reginaldo-tinha-45-anos-e-ja-havia-apresentado-crise-nervosa-durante-o.jpg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Fernando, 52 anos</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Acesso imediato, tudo liberado e ainda ganhei pack de
-            boas-vindas. Que isso.”
-          </p>
-        </div>
-        <div style="
+      <strong>Fernando, 52 anos</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Acesso imediato, tudo liberado e ainda ganhei pack de
+        boas-vindas. Que isso.”
+      </p>
+    </div>
+    <div style="
               flex: 0 0 auto;
               width: 250px;
               background: #fff;
@@ -1674,22 +1671,22 @@
               white-space: normal;
               text-align: center;
             ">
-          <img src="images/acervo-bdsp-bdbr-limpo-20240516-0545-frame-38441.jpeg" style="
+      <img src="images/acervo-bdsp-bdbr-limpo-20240516-0545-frame-38441.jpeg" style="
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 10px;
               " />
-          <strong>Luan Rocha</strong>
-          <p style="margin-top: 5px; font-size: 0.9rem">
-            “Ela mandou áudio me agradecendo depois da assinatura... quase
-            gozei só com isso kkkkkk
-          </p>
-        </div>
-      </div>
+      <strong>Luan Rocha</strong>
+      <p style="margin-top: 5px; font-size: 0.9rem">
+        “Ela mandou áudio me agradecendo depois da assinatura... quase
+        gozei só com isso kkkkkk
+      </p>
+    </div>
+  </div>
 
-      <footer style="
+  <footer style="
             background: #fff;
             padding: 20px 10px;
             font-size: 13px;
@@ -1697,94 +1694,94 @@
             text-align: center;
             border-top: 1px solid #eee;
           ">
-        <p>🔒 Seu acesso é 100% seguro com criptografia SSL</p>
-        <p>
-          ✅ Garantia total: seu dinheiro de volta se não ficar satisfeito
-        </p>
-        <p>🛑 Cancele quando quiser, sem burocracia</p>
-        <p>
-          📧 Alguma dúvida?
-          <a href="mailto:suporte@exemplo.com" style="color: #ff6d00; text-decoration: none">Fale conosco</a>
-        </p>
-      </footer>
+    <p>🔒 Seu acesso é 100% seguro com criptografia SSL</p>
+    <p>
+      ✅ Garantia total: seu dinheiro de volta se não ficar satisfeito
+    </p>
+    <p>🛑 Cancele quando quiser, sem burocracia</p>
+    <p>
+      📧 Alguma dúvida?
+      <a href="mailto:suporte@exemplo.com" style="color: #ff6d00; text-decoration: none">Fale conosco</a>
+    </p>
+  </footer>
 
-      <section style="
+  <section style="
             padding: 30px 20px;
             max-width: 600px;
             margin: 40px auto;
             border-radius: 10px;
             background: #f9f9f9;
           ">
-        <h2 style="
+    <h2 style="
               text-align: center;
               font-size: 22px;
               color: #ff6d00;
               margin-bottom: 20px;
             ">
-          Perguntas Frequentes
-        </h2>
+      Perguntas Frequentes
+    </h2>
 
-        <details style="
+    <details style="
               margin-bottom: 15px;
               border: 1px solid #eee;
               border-radius: 8px;
               padding: 10px 15px;
             ">
-          <summary style="font-weight: bold; cursor: pointer">
-            O conteúdo é realmente explícito?
-          </summary>
-          <p style="margin-top: 10px">
-            Sim! Todo o conteúdo é 100% explícito e sem censura. Você terá
-            acesso ao que mais deseja ver.
-          </p>
-        </details>
+      <summary style="font-weight: bold; cursor: pointer">
+        O conteúdo é realmente explícito?
+      </summary>
+      <p style="margin-top: 10px">
+        Sim! Todo o conteúdo é 100% explícito e sem censura. Você terá
+        acesso ao que mais deseja ver.
+      </p>
+    </details>
 
-        <details style="
+    <details style="
               margin-bottom: 15px;
               border: 1px solid #eee;
               border-radius: 8px;
               padding: 10px 15px;
             ">
-          <summary style="font-weight: bold; cursor: pointer">
-            O pagamento é seguro e discreto?
-          </summary>
-          <p style="margin-top: 10px">
-            Totalmente! Seu pagamento é Discreto e ninguém saberá do que se
-            trata.
-          </p>
-        </details>
+      <summary style="font-weight: bold; cursor: pointer">
+        O pagamento é seguro e discreto?
+      </summary>
+      <p style="margin-top: 10px">
+        Totalmente! Seu pagamento é Discreto e ninguém saberá do que se
+        trata.
+      </p>
+    </details>
 
-        <details style="
+    <details style="
               margin-bottom: 15px;
               border: 1px solid #eee;
               border-radius: 8px;
               padding: 10px 15px;
             ">
-          <summary style="font-weight: bold; cursor: pointer">
-            Como vou receber o conteúdo?
-          </summary>
-          <p style="margin-top: 10px">
-            Após o pagamento via Pix, você receberá o acesso direto no seu
-            E-mail em até 2 minutos.
-          </p>
-        </details>
+      <summary style="font-weight: bold; cursor: pointer">
+        Como vou receber o conteúdo?
+      </summary>
+      <p style="margin-top: 10px">
+        Após o pagamento via Pix, você receberá o acesso direto no seu
+        E-mail em até 2 minutos.
+      </p>
+    </details>
 
-        <details style="
+    <details style="
               margin-bottom: 15px;
               border: 1px solid #eee;
               border-radius: 8px;
               padding: 10px 15px;
             ">
-          <summary style="font-weight: bold; cursor: pointer">
-            E se eu tiver problemas com o acesso?
-          </summary>
-          <p style="margin-top: 10px">
-            Você poderá entrar em contato direto com o suporte no WhatsApp que
-            será enviado junto ao conteúdo.
-          </p>
-        </details>
+      <summary style="font-weight: bold; cursor: pointer">
+        E se eu tiver problemas com o acesso?
+      </summary>
+      <p style="margin-top: 10px">
+        Você poderá entrar em contato direto com o suporte no WhatsApp que
+        será enviado junto ao conteúdo.
+      </p>
+    </details>
 
-      </section>
+  </section>
 
 </body>
 
